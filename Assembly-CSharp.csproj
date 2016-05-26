@@ -48,6 +48,7 @@
      <Compile Include="assets\Bullet.cs" />
      <Compile Include="assets\Door.cs" />
      <Compile Include="assets\Enemy.cs" />
+     <Compile Include="assets\Player.cs" />
      <Compile Include="assets\Rocket.cs" />
      <Compile Include="assets\Shoot.cs" />
      <Compile Include="assets\ShootGun.cs" />
