@@ -45,7 +45,7 @@ public class Door : MonoBehaviour{
 
 	//Activate the Main function when player is near the door
 	void OnTriggerEnter (Collider other){
-		print (other.gameObject.tag);
+		//print (other.gameObject.tag);
 		if (other.gameObject.tag == "Player") {
 			enter = true;
 		}
