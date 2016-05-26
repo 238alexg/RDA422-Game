@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Bullet : MonoBehaviour {
 	// The fly speed (used by the weapon later)
-	public float speed = 10000.0f;
+	public float speed = 2500.0f;
 
 
 
