@@ -19,10 +19,8 @@ public class Enemy : MonoBehaviour {
 
 	void Update () {
 		if (health <= 0.0) {
-			ActualScore = GameObject.FindWithTag ("HUD");
-			score_text = ActualScore.GetComponent <Text>();
-			//score = score + 100;
-			//score_text.text = "" + score;
+			score = score + 100;
+			score_text.text = "" + score;
 			Destroy(gameObject);
 		}
 	}
