@@ -2,8 +2,13 @@
 using System.Collections;
 
 public class Player : MonoBehaviour {
+	//public GameObject rocketPrefab;
+	//public GameObject riflePrefab;
+	//public GameObject uziPrefab;
+	//public GameObject curWeapon;
 	public float health;
-
+	//public Vector3 rifle_pos;
+	//public Vector3 rocket_pos;
 	// Use this for initialization
 	void Start () {
 	
@@ -14,6 +19,38 @@ public class Player : MonoBehaviour {
 		if (health <= 0) {
 			print ("you dedad");
 			Time.timeScale = 0;
+		}
+
+		if(Input.GetKeyDown("1")){
+			foreach(Transform child in transform){
+				if (child.tag != "Rocket") {
+					child.gameObject.SetActive (false);
+				} else {
+					child.gameObject.SetActive (true);
+				}
+			}
+			//GameObject g = (GameObject)Instantiate (rocketPrefab);
+			//g.transform.parent = transform;
+			//g.transform.position =  new Vector3 (transform.position.x + rifle_pos.x,
+		//		transform.position.y + rifle_pos.y, transform.position.z + rifle_pos.z);
+			
+		}else if(Input.GetKeyDown("2")){
+			foreach(Transform child in transform){
+				if (child.tag != "Rifle") {
+					child.gameObject.SetActive (false);
+				}else{
+					child.gameObject.SetActive (true);
+				}		
+			}
+
+		}else if(Input.GetKeyDown("3")){
+			foreach(Transform child in transform){
+				if (child.tag != "Uzi") {
+					child.gameObject.SetActive (false);
+				}else{
+					child.gameObject.SetActive (true);
+				}		
+			}
 		}
 	}
 
