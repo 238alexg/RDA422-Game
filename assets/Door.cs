@@ -33,7 +33,15 @@ public class Door : MonoBehaviour{
 		}
 
 		if(Input.GetKeyDown("f") && enter){
-			open = !open;
+			if (GameObject.Find ("Enemy") == null && GameObject.Find ("Enemy(Clone)") == null) {
+				print ("no enemies");
+				open = !open;
+			} else {
+				print ("found enemies");
+			//	foreach (GameObject enemy in GameObject.Find ("Enemy")) {
+			//		print (enemy.name);
+			//	}
+			}
 		}
 	}
 

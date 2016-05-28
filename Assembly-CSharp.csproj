@@ -45,13 +45,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="assets\AgentScript.cs" />
      <Compile Include="assets\Bullet.cs" />
      <Compile Include="assets\Door.cs" />
      <Compile Include="assets\Enemy.cs" />
      <Compile Include="assets\Player.cs" />
      <Compile Include="assets\Rocket.cs" />
+     <Compile Include="assets\Room1Spawner.cs" />
+     <Compile Include="assets\Room2Spawn.cs" />
+     <Compile Include="assets\Room3Spawner.cs" />
      <Compile Include="assets\Shoot.cs" />
      <Compile Include="assets\ShootGun.cs" />
+     <Compile Include="assets\WeaponSwap.cs" />
      <None Include="assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
      <None Include="assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
